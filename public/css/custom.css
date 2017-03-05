@@ -1,0 +1,47 @@
+/*  Google Fonts
+*   font-family:'Sansita One', cursive;
+*
+*/
+
+header{
+
+  background-color:black;
+  color:white;
+  height:50px;
+
+}
+
+
+.chatBox{
+  margin-top:15px;
+  height:200px;
+  overflow:scroll;
+}
+
+.main{
+  margin-top:20px;
+}
+
+.modalTitle{
+  font-family:'Sansita One', cursive;
+  font-size:3rem;
+}
+
+.vibesLogo{
+  font-family:'Sansita One', cursive;
+  font-size:5rem;
+}
+
+.vibrateButton{
+  color:white;
+  display:inline-block;
+  font-size:2rem;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+@media screen and (max-width: 699px) {
+  .morseCode{
+     font-size:1rem;
+   }
+}

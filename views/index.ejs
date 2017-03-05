@@ -1,0 +1,97 @@
+<% include header.ejs %>
+
+  <div class="main">
+    <div class="container">
+      <div class="row vibesContainer text-center">
+	<h1>138.68.45.82:3000 (Android only)</h1>
+        <h1 class="vibesLogo">Vibes</h1>
+        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#morseModal">Morse Codes</a>
+        <span class="btn btn-info">Users Connected <span class="userCount badge">0</span></span>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-6 col-xs-offset-3 well chatBox">
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="text-center">
+          <button id="vibrateButtonShort" class="btn btn-success center-block vibrateButton">Short Vibration</button>
+          <button id="vibrateButtonLong" class="btn btn-success center-block vibrateButton">Long Vibration</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal -->
+
+  <div class="modal fade" id="morseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content morseCode">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>  
+         <p class="modalTitle text-center" >Morse Codes</p>
+         <p class="text-center shortLong">Short Vibration &#9866; &nbsp;&nbsp;   Long Vibration &#9899;</p>
+        </div>
+      
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-xs-6">
+              <ul class="list-group">
+                <li class="list-group-item"><strong><mark>A</mark></strong> &#9866; &#9899;</li>
+                <li class="list-group-item"><strong><mark>B</mark></strong> &#9899; &#9866; &#9866; &#9866;</li>
+                <li class="list-group-item"><strong><mark>C</mark></strong> &#9899; &#9866; &#9899; &#9866;</li>
+                <li class="list-group-item"><strong><mark>D</mark></strong> &#9899; &#9866; &#9866; </li>
+                <li class="list-group-item"><strong><mark>E</mark></strong> &#9866; </li>
+                <li class="list-group-item"><strong><mark>F</mark></strong> &#9866; &#9866; &#9899; &#9866;</li>
+                <li class="list-group-item"><strong><mark>G</mark></strong> &#9899; &#9899; &#9866; </li>
+                <li class="list-group-item"><strong><mark>H</mark></strong> &#9866; &#9866; &#9866; &#9866;</li>
+                <li class="list-group-item"><strong><mark>I</mark></strong> &#9866; &#9866; </li>
+                <li class="list-group-item"><strong><mark>J</mark></strong> &#9866; &#9899; &#9899; &#9899;</li>
+                <li class="list-group-item"><strong><mark>K</mark></strong> &#9899; &#9866; &#9899; </li>
+                <li class="list-group-item"><strong><mark>L</mark></strong> &#9866; &#9899; &#9866; &#9866;</li>
+                <li class="list-group-item"><strong><mark>M</mark></strong> &#9866; &#9866; </li>
+                <li class="list-group-item"><strong><mark>N</mark></strong> &#9866; &#9899; </li>
+                <li class="list-group-item"><strong><mark>O</mark></strong> &#9899; &#9899; &#9899; </li>
+                <li class="list-group-item"><strong><mark>P</mark></strong> &#9866; &#9899; &#9899; &#9866;</li>
+                <li class="list-group-item"><strong><mark>Q</mark></strong> &#9899; &#9899; &#9866; &#9899;</li>
+                <li class="list-group-item"><strong><mark>R</mark></strong> &#9866; &#9899; &#9866; </li>
+               <li class="list-group-item"><strong><mark>S</mark></strong> &#9866; &#9866; &#9866; </li>
+
+             </ul>
+          </div>
+          <div class="col-xs-6">
+            <ul class="list-group">
+              <li class="list-group-item"><strong><mark>T</mark></strong> &#9899; </li>
+              <li class="list-group-item"><strong><mark>U</mark></strong> &#9866; &#9866; &#9899; </li>
+              <li class="list-group-item"><strong><mark>V</mark></strong> &#9866; &#9866; &#9866; &#9899;</li>
+              <li class="list-group-item"><strong><mark>W</mark></strong> &#9866; &#9899; &#9899; </li>
+              <li class="list-group-item"><strong><mark>X</mark></strong> &#9899; &#9866; &#9866; &#9899;</li>
+              <li class="list-group-item"><strong><mark>Y</mark></strong> &#9899; &#9866; &#9899; &#9899;</li>
+              <li class="list-group-item"><strong><mark>Z</mark></strong> &#9899; &#9899; &#9866; &#9866;</li>
+              <li class="list-group-item">&nbsp;</li>
+              <li class="list-group-item"><strong><mark>1</mark></strong> &#9866; &#9899; &#9899; &#9899; &#9899;</li>
+              <li class="list-group-item"><strong><mark>2</mark></strong> &#9866; &#9866; &#9899; &#9899; &#9899;</li>
+              <li class="list-group-item"><strong><mark>3</mark></strong> &#9866; &#9866; &#9866; &#9899; &#9899;</li>
+              <li class="list-group-item"><strong><mark>4</mark></strong> &#9866; &#9866; &#9866; &#9866; &#9899;</li>
+              <li class="list-group-item"><strong><mark>5</mark></strong> &#9866; &#9866; &#9866; &#9866; &#9866;</li>
+              <li class="list-group-item"><strong><mark>6</mark></strong> &#9899; &#9866; &#9866; &#9866; &#9866;</li>
+              <li class="list-group-item"><strong><mark>7</mark></strong> &#9899; &#9899; &#9866; &#9866; &#9866;</li>
+              <li class="list-group-item"><strong><mark>8</mark></strong> &#9899; &#9899; &#9899; &#9866; &#9866;</li>
+              <li class="list-group-item"><strong><mark>9</mark></strong> &#9899; &#9899; &#9899; &#9899; &#9866;</li>
+              <li class="list-group-item"><strong><mark>0</mark></strong> &#9899; &#9899; &#9899; &#9899; &#9899;</li>
+            </ul>
+          </div>
+        </div>
+
+
+      </div><!-- Modal Content End -->
+    </div>
+  </div>
+
+
+
+
+<% include footer.ejs %>
